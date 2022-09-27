@@ -9,7 +9,7 @@ const Product = ({ product, handleAddToCart }) => {
 
     return (
         <div className='product'>
-            <img src={img} alt=""></img>
+            <img src={img} alt="" onError={(e) => { e.target.setAttribute('src', 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/52b5fde5829a4a04820dacf50127b969_9366/Adicolor_Classics_Primeblue_SST_Track_Pants_Blue_H06714_21_model.jpg') }}></img>
             <div className='product-info'>
                 <p className='product-category'>{category}</p>
                 <p className='product-name'>{name}</p>
